@@ -25,6 +25,5 @@
       "packageNameTemplate": "{{depName}}/{{currentValue}}@_/_",
       "versioningTemplate": "conan"
     }
-  ],
-  "repositoryCache": "disabled"
+  ]
 }
