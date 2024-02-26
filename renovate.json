@@ -1,0 +1,29 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "conan": {
+    "enabled": true
+  },
+  "enabledManagers": [
+    "conan",
+    "custom.regex"
+  ],
+  "rebaseWhen": "conflicted",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "conandata.yml"
+      ],
+      "matchStrings": [
+        "\\s+(?<depName>.*?):.*?version:\\s*?\"(?<currentValue>.*?)\""
+      ],
+      "datasourceTemplate": "conan",
+      "depTypeTemplate": "requires",
+      "packageNameTemplate": "{{depName}}/{{currentValue}}@_/_",
+      "versioningTemplate": "conan"
+    }
+  ]
+}
