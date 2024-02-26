@@ -22,7 +22,7 @@
       ],
       "datasourceTemplate": "conan",
       "depTypeTemplate": "requires",
-      "packageNameTemplate": "{{depName}}/{{currentValue}}",
+      "packageNameTemplate": "{{depName}}/{{currentValue}}@_/_",
       "versioningTemplate": "conan"
     }
   ]
