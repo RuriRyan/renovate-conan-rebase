@@ -1,0 +1,27 @@
+{
+    "platform": "github",
+    "gitAuthor": "RuriRyan <2413490+RuriRyan@users.noreply.github.com>",
+    "conan": {
+        "enabled": true
+    },
+    "packageRules": [
+        {
+            "matchDatasources": [
+                "conan"
+            ],
+            "versioning": "regex:^(?<major>\\d+)(\\.(?<minor>[\\da-z]+))?(\\.(?<patch>[\\da-z]+))?([\\.-](?<build>\\d+))?(_(?<revision>\\d+))?$"
+        }
+    ],
+    "allowedPostUpgradeCommands": [
+        "^.*$"
+    ],
+    "onboardingConfig": {
+        "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+        "extends": [
+            "config:best-practices"
+        ]
+    },
+    "repositories": [
+        "RuriRyan/renovate-conan-rebase"
+    ]
+}
