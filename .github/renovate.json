@@ -1,4 +1,5 @@
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "platform": "github",
     "gitAuthor": "RuriRyan <2413490+RuriRyan@users.noreply.github.com>",
     "conan": {
@@ -23,5 +24,6 @@
     },
     "repositories": [
         "RuriRyan/renovate-conan-rebase"
-    ]
+    ],
+    "repositoryCache": "enabled"
 }
