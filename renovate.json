@@ -3,11 +3,7 @@
   "extends": [
     "config:recommended"
   ],
-  "conan": {
-    "enabled": true
-  },
   "enabledManagers": [
-    "conan",
     "custom.regex"
   ],
   "rebaseWhen": "conflicted",
