@@ -7,7 +7,6 @@
     "enabled": true
   },
   "enabledManagers": [
-    "conan",
     "custom.regex"
   ],
   "rebaseWhen": "conflicted",

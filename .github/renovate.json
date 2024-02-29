@@ -25,5 +25,5 @@
     "repositories": [
         "RuriRyan/renovate-conan-rebase"
     ],
-    "repositoryCache": "enabled"
+    "repositoryCache": "disabled"
 }
