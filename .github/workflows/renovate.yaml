@@ -15,7 +15,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /tmp/renovate/cache
-          key: cache-renovate
+          key: cache-renovate-${{ github.run_id }}
+          restore-keys: |
+            cache-renovate
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v40.1.2
         with:
