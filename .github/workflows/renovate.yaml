@@ -21,7 +21,7 @@ jobs:
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v40.1.2
         with:
-          renovate-version: 37.240.0
+          renovate-version: 37.241.0
           configurationFile: .github/renovate.json
           docker-user: root
           token: ${{ secrets.RENOVATE_TOKEN }}
